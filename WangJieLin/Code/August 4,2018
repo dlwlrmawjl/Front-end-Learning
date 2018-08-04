@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<script src="jquery.min.js"></script>
+    <script>
+          $(function(){
+   $("#b1").click(function(){
+      $("#d").hide();
+   });
+   $("#b2").click(function(){
+      $("#d").show();
+   });
+});
+    </script>
+ 
+<button id="b1">隐藏div</button>
+ 
+<button id="b2">显示div</button>
+ 
+<br>
+<br>
+ 
+<div id="d">
+ 
+这是一个div
+ 
+</div>
+     </body>
+</html>
+
