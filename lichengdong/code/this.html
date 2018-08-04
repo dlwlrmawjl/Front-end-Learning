@@ -1,0 +1,12 @@
+<input type="button" value="Button">
+<script>
+    var button = document.getElementsByTagName("input")[0];
+    var o = {};
+    o.f = function () {
+        if (this == o) alert("this == o");
+        if (this == window) alert("this == window");
+        if (this == button) alert("this == button");
+    }
+    button.onclick = o.f;
+    setTimeout(button.onclick, 2000);
+</script>
