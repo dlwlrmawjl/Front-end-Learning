@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script>
+            $(function(){
+                $("#b1").click(function(){
+                    alert($("#input1").val());
+                });
+            });
+   
+            $(function(){
+            $("#b1").click(function(){
+                alert($("#d1").html());
+                });
+            });
+        </script>
+        <button id="b1">取值</button>
+        <br>
+        <br>
+        <input type="text" id="input1" value="默认值">
+        <br>
+        <br>
+        <button id="b1">获取文本内容</button>
+        <br>
+        <br>
+        <div id="d1">
+                这是div的内容
+        <span>这是div里的span
+        </span>
+        </div>
+	</body>
+</html>
