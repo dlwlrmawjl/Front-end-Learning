@@ -1,5 +1,4 @@
-|Tables|Are|Cool|
-|:--|:--|
-| col 3 is | right-aligned | left-aligned | $1600 |
-| col 2 is | centered | $12 |
-| zebra stripes | are neat | $1 |
+|Author|吕兆鹤|
+|---|---
+|E-mail|ytlvzhaohe247@163.com
+|8.4|今日进度：无|
