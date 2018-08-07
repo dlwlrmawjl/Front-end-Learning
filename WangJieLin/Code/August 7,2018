@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<style>
+            table{
+                border-collapse:collapse;
+                width:90%;
+            }
+            tr{
+                border-bottom-style: solid;
+                border-bottom-width: 1px;
+                border-bottom-color: lightgray;
+                height:35px;
+            }
+            td{
+                width:25%;
+                text-align:center;
+            }
+            </style>
+            <table id="t">
+            <tr >
+                <td>序号</td>
+                <td>姓名</td>
+                <td>性别</td>
+                <td>学校</td>
+            </tr>
+            <tr >
+                <td>1</td>
+                <td>Mark</td>
+                <td>男</td>
+                <td>长安大学</td>
+            </tr>
+            <tr >
+                <td>2</td>
+                <td>Lily</td>
+                <td>女</td>
+                <td>长安大学</td>
+            </tr>
+            <tr >
+                <td>3</td>
+                <td>Annie</td>
+                <td>女</td>
+                <td>长安大学</td>
+            </tr>
+            <tr >
+                <td>4</td>
+                <td>Tom</td>
+                <td>男</td>
+                <td>长安大学</td>
+            </tr>
+            </table>
+            <script>
+                var trs = document.getElementsByTagName("tr");
+                for(i=0;i<trs.length;i++){
+                    if(1==i%2)
+                    trs[i].style.backgroundColor='#f8f8f8';
+                }
+            </script>
+	</body>
+</html>
