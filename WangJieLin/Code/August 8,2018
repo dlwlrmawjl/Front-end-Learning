@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script>
+            $(function(){
+                $("#b1").click(function(){
+                $("div").first().toggleClass("pink");
+                });
+                $("#b2").click(function(){
+                $("div").last().toggleClass("pink");
+                });
+                $("#b3").click(function(){
+                $("div").eq(4).toggleClass("pink");
+                });       
+            });
+            $(function(){
+                $("#a1").click(function(){
+                $("#currentDiv").parent().toggleClass("a");
+                });
+                $("#a2").click(function(){
+                $("#currentDiv").parents().toggleClass("a");
+                });
+            });
+        </script>
+        <button id="b1">切换第1个div背景色</button>
+        <button id="b2">切换最后1个div背景色</button> 
+        <button id="b3">切换第5个div背景色</button>
+        <br>
+        <br>      
+        <style>
+            .pink{
+                background-color:pink;
+            }
+            div{
+                padding:20px;
+            }
+            div#grandParentDiv{
+                background-color:pink;
+            }
+            div#parentDiv{
+                background-color:green;
+            }
+            div#currentDiv{
+                background-color:red;
+            }
+            .b{
+                border: 2px solid black;
+            }
+            </style>
+            <div>
+            <span>Hello JQuery 1</span>
+            </div>    
+            <div>
+            <span>Hello JQuery 2</span>
+            </div>
+            <div>
+            <span>Hello JQuery 3</span>
+            </div>
+            <div>
+            <span>Hello JQuery 4</span>
+            </div>
+            <div>
+            <span>Hello JQuery 5</span>
+            </div>
+            <div>
+            <span>Hello JQuery 6</span>
+            </div>
+            <button id="a1">改变parent()的边框</button>
+            <button id="a2">改变parents()的边框</button>
+            <div id="grandParentDiv" >
+                        祖先元素
+                <div id="parentDiv">
+                               父元素
+                    <div id="currentDiv">当前元素</div> 
+                </div>
+            </div>
+	</body>
+</html>
