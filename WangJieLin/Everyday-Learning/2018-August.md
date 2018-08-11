@@ -7,3 +7,7 @@
    8.06，学习了增加，删除，切换class。css函数。
    8.09，通过attr()获取一个元素的属性，通过attr(attr,value)修改属性，通过removeAttr(attr)删除属性和prop与attr的区别。
    8.10，通过show(), hide(),toggle()实现显示、隐藏、切换，通过slideUp(), slideDown(),slideToggle()实现向上滑动、向下滑动、滑动切换，通过fadeIn(), fadeOut(),fadeToggle() fadeTo()实现淡入、淡出、淡入淡出切换、指定淡入程度。
+   8.11，通过animate()实现自定义动画效果和回调函数callback()的使用。
+
+  
+
