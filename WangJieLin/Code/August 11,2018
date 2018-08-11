@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script>
+            $(function(){
+            var div = $("#d");
+                $("#b1").click(function(){
+                div.animate({left:'100px'},2000);
+                div.animate({left:'0px',top:'50px',height:'50px'},2000);
+                });
+            });
+            $(function(){
+            var div = $("#e");
+                $("#a1").click(function(){
+                div.animate({left:'100px'},2000);
+                div.animate({left:'0px',top:'50px',height:'50px'},2000,function(){
+                    alert("动画演示结束");
+                    });
+                });
+            });
+        </script>
+        <style>
+            button{
+                display:block;
+            }
+            div{
+                background-color:pink;
+                width:200px;
+                height:80px;
+                font-size:12px;
+                position:relative;
+            }
+        </style>  
+        <button id="b1">自定义动画</button>
+        <br>
+        <br>  
+        <div id="d">
+            <p>1. 向右移动100px</p>
+            <p>2. 向左下移动50px，同时高度变小</p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <style>
+            button{
+                display:block;
+            }
+            div{
+                background-color:pink;
+                width:200px;
+                height:80px;
+                font-size:12px;
+                position:relative;
+            }
+        </style>
+        <button id="a1">自定义动画结束时，会有提示框</button>
+        <br>
+        <br>   
+        <div id="e">
+            <p>1. 向右移动100px</p>
+            <p>2. 向左下移动50px，同时高度变小</p>
+        </div>
+	</body>
+</html>
