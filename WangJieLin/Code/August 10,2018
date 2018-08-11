@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script>
+            $(function(){
+            var div = $("#d");
+                $("#b1").click(function(){
+                    div.hide();
+                });
+                $("#b2").click(function(){
+                    div.show();
+                });
+                $("#b3").click(function(){
+                    div.toggle();
+                });
+                $("#b4").click(function(){
+                    div.show(1000);
+                });
+                $("#b5").click(function(){
+                    div.hide(1000);
+                });
+                $("#b6").click(function(){
+                    div.toggle(1000);
+                }); 
+            }); 
+            $(function(){
+            var div = $("#e");
+                $("#a1").click(function(){
+                    div.slideUp();
+                });
+                $("#a2").click(function(){
+                    div.slideDown();
+                });
+                $("#a3").click(function(){
+                    div.slideToggle();
+                });
+                $("#a4").click(function(){
+                    div.slideUp(2000);
+                });
+                $("#a5").click(function(){
+                    div.slideDown(2000);
+                });
+                $("#a6").click(function(){
+                    div.slideToggle(2000);
+                });
+            });
+            
+            $(function(){
+            var div = $("#f");
+                $("#c1").click(function(){
+                    div.fadeIn();
+                });
+                $("#c2").click(function(){
+                    div.fadeOut();
+                });
+                $("#c3").click(function(){
+                    div.fadeToggle();
+                });
+                $("#c4").click(function(){
+                    div.fadeIn(2000);
+                });
+                $("#c5").click(function(){
+                    div.fadeOut(2000);
+                });
+                $("#c6").click(function(){
+                    div.fadeToggle(2000);
+                }); 
+                $("#c7").click(function(){
+                $("#c1").fadeTo("slow",0.2);
+                $("#c2").fadeTo("slow",0.5);
+                $("#c3").fadeTo("slow",0.8);
+                });  
+            });
+        </script>
+        <style>
+            button{
+                display:block;
+            }
+            div{
+                border:solid 1px gray;
+                background-color:pink;
+                width:300px;
+                height:100px;
+            }
+        </style>
+        <button id="b1">立即隐藏</button>
+        <button id="b2">立即显示</button>
+        <button id="b3">立即切换</button> 
+        <button id="b4">延时显示</button>
+        <button id="b5">延时隐藏</button>
+        <button id="b6">延时切换</button>
+        <br>
+        <br>
+        <div id="d">
+                        用于演示效果的DIV
+        </div>
+        <br>
+        <br>
+        <style>
+            button{
+                display:block;
+            }
+            div{
+                border:solid 1px gray;
+                background-color:pink;
+                width:300px;
+                height:100px;
+            }
+        </style> 
+        <button id="a1">向上滑动</button>
+        <button id="a2">向下滑动</button>
+        <button id="a3">滑动切换</button>
+        <button id="a4">延时向上滑动</button>
+        <button id="a5">延时向下滑动</button>
+        <button id="a6">延时滑动切换</button>
+        <br>
+        <br>
+        <div id="e">
+                        用于演示效果的DIV
+        </div>
+        <style>
+            button{
+                display:block;
+            }
+            table div{
+                border:solid px gray;
+                background-color:pink;
+                width:80px;
+                height:50px;
+            }
+            div{
+                border:solid 1px gray;
+                background-color:pink;
+                width:300px;
+                height:100px;
+            }
+        </style>
+        <button id="c2">淡出</button> 
+        <button id="c1">淡入</button>
+        <button id="c3">淡入淡出切换</button>
+        <button id="c5">延时淡出</button>
+        <button id="c4">延时淡入</button>
+        <button id="c6">延时滑淡入淡出切换</button>
+        <button id="c7">fadeTo</button>
+        <br>
+        <br>
+        <div id="f">
+                        用于演示效果的DIV
+        </div>
+        <table>
+            <tr>
+                <td>
+                    <div id="c1">
+                                                用于演示fadeTo 20%
+                    </div>
+                </td>
+                <td>
+                    <div id="c2">
+                                                用于演示fadeTo 50%
+                    </div>  
+                </td>
+                <td>
+                    <div id="c3">
+                                                用于演示fadeTo 80%
+                    </div>  
+                </td>
+            </tr>
+        </table>
+	</body>
+</html>
