@@ -6,3 +6,4 @@
    8.05，通过JQuery对象的val()方法获取值 ，通过html() 获取元素内容,如果有子元素，保留标签。
    8.06，学习了增加，删除，切换class。css函数。
    8.09，通过attr()获取一个元素的属性，通过attr(attr,value)修改属性，通过removeAttr(attr)删除属性和prop与attr的区别。
+   8.11，通过animate()实现自定义动画效果和回调函数callback()的使用。
