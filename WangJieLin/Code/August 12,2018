@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script>
+            $(function(){
+                $("#b").click(function(){
+                    $("#message").html("单击按钮");
+                }); 
+                $("#b").dblclick(function(){
+                    $("#message").html("双击按钮");
+                });
+            });
+            $(function(){
+                $("input").focus(function(){
+                    $(this).val("获取了焦点");
+                }); 
+                $("input").blur(function(){
+                    $(this).val("失去了焦点");
+                });
+            });
+            $(function(){
+                $("#input1").change(function(){
+                    var text = $(this).val();
+                $("#message").html("input1的内容变为了"+text);
+                });
+            });
+        </script> 
+        <div id="message"></div>
+        <button id="b">测试单击和双击</button>
+        <input type="text" >
+        <input type="text" >
+        <br>
+        <br>
+        <div id="message"></div>
+        <input id="input1" type="text" >
+        <br>
+        <input size="50" id="input2"type="text" value="只有当input1失去焦点的时候，才会触发change事件" >
+	</body>
+</html>
