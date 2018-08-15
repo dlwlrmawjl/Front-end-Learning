@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script>
+            document.write($.trim(" Hello JQuery    "));
+            document.close();  
+            $(function(){
+                $("#b1").click(function(){
+                    var div= $("#d");
+                    var d = div[0];
+                    var s ="JQuery对象是 " + div;
+                    s +="\n对应的DOM对象是 " + d
+                    alert(s);
+                });
+            });
+            $(function(){
+                $("#a1").click(function(){
+                    var div= document.getElementById("c");
+                    var c = $(div);
+                    var s ="DOM对象是 " + div;
+                    s +="\n对应的JQuery对象是 " + c
+                    alert(s);
+                });
+            });
+        </script> 
+        <button id="b1">JQuery对象div转为DOM对象d</button>
+        <br>
+        <br>  
+        <style>
+            .pink{
+                background-color:pink;
+            }
+        </style>   
+        <div id="d">
+            Hello JQuery
+        </div>
+        <br>
+        <br>
+        <button id="a1">DOM对象div转为JQuery对象d</button>
+        <br>
+        <br>    
+        <style>
+            .pink{
+                background-color:pink;
+            }
+        </style> 
+        <div id="c">
+            Hello JQuery
+        </div>
+	</body>
+</html>
