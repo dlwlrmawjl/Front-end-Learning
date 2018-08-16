@@ -11,4 +11,4 @@
    8.12，点击click()，dblclick()，焦点focus()，blur()，change()内容改变的使用和用submit()提交form表单。
    8.13，鼠标事件mousedown()，mouseup()，mousemove()，mouseenter()，mouseleave()，mouseover()，mouseout()。
    8.14，学习了jQuery中的数组操作，包括用$.each 遍历一个数组，$.unique() 去掉重复的元素，$.inArray 返回元素在数组中的位置 ，如果不存在返回-1。
-
+   8.15，学习了jQuery中的字符串操作，$.trim() 去除首尾空白。jQuery对象和DOM节点对象的互相转换。
